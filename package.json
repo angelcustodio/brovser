@@ -1,0 +1,42 @@
+{
+  "name": "brovser",
+  "description": "Check if a certain country has/uses postal codes - ISO 3166-1 compliant",
+  "homepage": "https://github.com/angelcustodio/brovser",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "author": {
+    "email": "angel@custod.io",
+    "name": "Angel Custodio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelcustodio/brovser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angelcustodio/brovser/issues"
+  },
+  "keywords": [
+    "browser",
+    "useragent",
+    "ua"
+  ],
+  "devDependencies": {
+    "jest": "~27.2.5"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "test": "jest",
+    "test:cache": "jest --no-cache",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "license": "MIT",
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "testMatch": [
+      "<rootDir>/tests/**/*.js"
+    ]
+  }
+}
